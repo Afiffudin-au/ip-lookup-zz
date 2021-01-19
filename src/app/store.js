@@ -1,8 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
-import counterReducer from '../features/counterSlice';
+import ipAddrSliceReducer from '../features/ipAddrSlice';
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    ipAddr: ipAddrSliceReducer,
   },
 });
