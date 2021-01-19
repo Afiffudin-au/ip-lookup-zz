@@ -1,0 +1,27 @@
+.LookupResult{
+  table {
+    border-collapse: collapse;
+    text-transform: capitalize;
+    font-family: monospace;
+    font-size: 16px;
+    width: 100%;
+    color: white;
+    table-layout: fixed;
+    overflow-wrap: break-word;
+    .flag{
+      margin-left: 5px;
+      width: 40px;
+    }
+  }
+  td, th {
+    border: 1px solid #607d8b;
+    text-align: left;
+    padding: 8px;
+  }
+  tr{
+    background-color: #37474f;
+  }
+  tr:nth-child(even) {
+    background-color: #263238;
+  }
+}
