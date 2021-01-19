@@ -2,7 +2,7 @@ import Axios from "axios"
 import { useDispatch } from "react-redux"
 import { addIpLookup } from "../features/ipAddrSlice"
 
-export const useLookupIpAddr = ()=>{
+export const useGetLookupIpAddr = ()=>{
   const dispatch = useDispatch()
   const getLookupIpAddr = (ip)=>{
     dispatch(addIpLookup({

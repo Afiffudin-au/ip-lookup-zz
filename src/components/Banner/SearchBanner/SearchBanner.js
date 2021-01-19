@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import { useLookupIpAddr } from '../../../useLookupIpAddr/useLookupIpAddr'
+import { useGetLookupIpAddr } from '../../../useLookupIpAddr/useGetLookupIpAddr'
 import CircularProgress from '@material-ui/core/CircularProgress';
 import './SearchBanner.scss'
 import { useSelector } from 'react-redux';
 import { selectLookupIpBlocks } from '../../../features/ipAddrSlice';
 function SearchBanner() {
   const {loading} = useSelector(selectLookupIpBlocks)
-  const {getLookupIpAddr} = useLookupIpAddr()
+  const {getLookupIpAddr} = useGetLookupIpAddr()
   const [ipValue,setIpValue] = useState('')
   const handleIpLookup = (e)=>{
     e.preventDefault()
