@@ -4,7 +4,6 @@ import { selectLookupIpBlocks } from '../../features/ipAddrSlice'
 import './LookupResult.scss'
 function LookupResult() {
   const {lookupIpResults} = useSelector(selectLookupIpBlocks)
-  console.log(lookupIpResults)
   return (
     <div className="LookupResult">
       {
@@ -51,15 +50,17 @@ function LookupResult() {
           </tr>
           <tr>
             <td>languages</td>
-            {
-            lookupIpResults?.location?.languages?.map(item=>(
-                <td>
-                {
-                  item.name
-                }
-                </td>
-              ))
-            }
+            <td>
+              {
+              lookupIpResults?.location?.languages?.map((item,index)=>(
+                <p key={index}>
+                  {
+                    item.name
+                  }
+                </p>      
+                ))
+              }
+            </td>
           </tr>
           <tr>
             <td>longitude</td>

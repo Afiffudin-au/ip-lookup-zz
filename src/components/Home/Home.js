@@ -1,6 +1,7 @@
 import React from 'react'
 import Banner from '../Banner/Banner'
 import LookupResult from '../LookupResult/LookupResult'
+import LookupResultMap from '../LookupResultMap/LookupResultMap'
 import Navbar from '../Navbar/Navbar'
 import './Home.scss'
 function Home() {
@@ -9,6 +10,7 @@ function Home() {
       <Navbar/>
       <Banner/>
       <LookupResult/>
+      <LookupResultMap/>
     </div>
   )
 }

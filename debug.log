@@ -1,1 +1,4 @@
 [0119/163814.780:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0121/090457.492:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0121/095819.215:ERROR:process_info.cc(359)] UncheckedAllocate
+[0121/095819.304:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\afiff\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\75169070-fd17-4934-b32f-103d57c55216: The system cannot find the path specified. (0x3)
