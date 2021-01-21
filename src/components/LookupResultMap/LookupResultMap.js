@@ -8,8 +8,8 @@ import { selectLookupIpBlocks } from '../../features/ipAddrSlice';
 function LookupResultMap() {
   const {lookupIpResults} = useSelector(selectLookupIpBlocks)
   const [viewport,setViewport] = useState({
-    latitude: lookupIpResults.latitude,
-    longitude: lookupIpResults.longitude,
+    latitude: lookupIpResults.latitude || 0,
+    longitude: lookupIpResults.longitude || 0,
     width : '100%',
     height : '600px',
     zoom :0
@@ -25,6 +25,7 @@ function LookupResultMap() {
       color: 'white',
     },
   }))(Tooltip);
+  if(lookupIpResults.error) return null
   return (
     <div className="lookupResultMap">
       {
@@ -37,7 +38,7 @@ function LookupResultMap() {
            setViewport(viewport)
          }}
          >
-         <Marker latitude={lookupIpResults.latitude} longitude={lookupIpResults.longitude} anchor="bottom">
+         <Marker latitude={lookupIpResults.latitude || 0} longitude={lookupIpResults.longitude || 0} anchor="bottom">
            <LightTooltip title="Location" arrow>
              <LocationOnIcon style={{fontSize : '40px',color : 'white'}}/>
            </LightTooltip>

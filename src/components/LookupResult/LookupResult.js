@@ -4,6 +4,7 @@ import { selectLookupIpBlocks } from '../../features/ipAddrSlice'
 import './LookupResult.scss'
 function LookupResult() {
   const {lookupIpResults} = useSelector(selectLookupIpBlocks)
+  if(lookupIpResults.error) return null
   return (
     <div className="LookupResult">
       {
