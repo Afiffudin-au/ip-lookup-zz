@@ -2,3 +2,8 @@
 [0121/090457.492:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
 [0121/095819.215:ERROR:process_info.cc(359)] UncheckedAllocate
 [0121/095819.304:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\afiff\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\75169070-fd17-4934-b32f-103d57c55216: The system cannot find the path specified. (0x3)
+[0121/105203.422:ERROR:process_info.cc(359)] UncheckedAllocate
+[0121/105203.440:ERROR:process_info.cc(359)] UncheckedAllocate
+[0121/105203.491:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\afiff\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\a068f099-d812-4ab8-be79-02bb223577eb: The system cannot find the path specified. (0x3)
+[0121/105355.592:ERROR:process_info.cc(359)] UncheckedAllocate
+[0121/105358.730:ERROR:process_info.cc(359)] UncheckedAllocate
